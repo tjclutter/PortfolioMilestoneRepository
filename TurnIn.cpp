@@ -9,6 +9,7 @@ void countUp() {
 	for (int i = 0; i < 21; ++i) {
 		cout << i;
 	}
+	cout << endl;
 }
 
 //declare function countDown
@@ -19,14 +20,13 @@ void countDown() {
 		cout << i;
 	}
 }
-
 //declare main function
 int main() {
 	try {
 		//declare upthread which carries out 
 		//the function countUp
 		thread upThread(countUp);
-		cout << endl;
+		
 		//declare downThread which carries out
 		//the function countDown
 		thread downThread(countDown);
